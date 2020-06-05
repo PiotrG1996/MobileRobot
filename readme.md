@@ -1,15 +1,17 @@
 <link href="style.css" rel="stylesheet"/>
-<div justify style="text-align: justify; max-width: 500px;">
 
 # 1. Omniwheeled Mobile Robot
 
 
-
+<div style="text-align: center">
 <img src="./images/show.gif" alt="alt text" width="" height="whatever">
+</div>
 
 
+<div justify style="text-align: justify; margin-left: 20%; max-width: 500px;">
 
 ## Introduction to the Mobile Robots
+
 
 Mobile robots can be divided according to the power transmission system of a robot. 
 Popularization of the automation systems has caused a huge interest in designing and inventing new things by amateur constructors.
@@ -58,6 +60,8 @@ Due to various way of movements, mobile robots can be group them into categories
 <li> Hybrid</li>
 </ul>
 
+
+
 ### **Omniwheels kinematics**
 
 An application of the mobile robot with multidirectional unit allows a holonomic movement on the plane. Robot's movement range is limited to four different directions and rotary motion. The purple arrows indicate the direction of robots movement, while the green arrows
@@ -68,40 +72,46 @@ determine the rotation of each individual engine.
 <li><b>Main movement</b> - consists of two distinguish directions, the robot moves with all four electrical motors running synchronously.
 </li>
 </ul>
-
+<div style="text-align: center">
 <img src="./images/track-1.png" alt="alt text" width="500" height="whatever">
-
+</div>
 <ul>
 <li>
 <b>Auxiliary movement</b> - consists of two successive directions, auxiliary movement is possible thanks to the synchronous operation of only two DC motors.
 </li>
 </ul>
 
-
+<div style="text-align: center">
 <img src="./images/track-2.png" alt="alt text" width="500" height="whatever">
+</div>
 <ul>
 <li>
 <b>Rotational movement</b> - consists of synchronous DC motors work, all of them rotate in the same direction. 
 </li>
 </ul>
 
-
+<div style="text-align: center">
 <img src="./images/track-3.png" alt="alt text" width="500" height="whatever">
-
+</div>
 ### Schematic
-
+<div style="text-align: center">
 <img src="./images/block.png" alt="alt text" width="500" height="whatever">
-
+</div>
 
 ### **Model 3D**
 
 A 3D cover was designed in SolidWorks and later made on a 3D printer.
-
+<div style="text-align: center">
 <img src="./images/model-1.png" alt="alt text" width="500" height="whatever">
+</div>
 
+<div style="text-align: center">
 <img src="./images/model-2.png" alt="alt text" width="500" height="whatever">
+</div>
 
+<div style="text-align: center">
 <img src="./images/model-3.png" alt="alt text" width="500" height="whatever">
+</div>
 
 
 
@@ -126,7 +136,7 @@ HTTP provides stable data transmition with the following principle:
 <li>Client - requests a servers content or service, does not offer any resource and initiates communication session.</li>
 </ul>
 
-What is the difference between Web App and Website ?
+### What is the difference between Web App and Website ?
 
 <b>Web Application</b> is a program based on Client-Server architecture which requires stable Internet connection in order to communicate with server. Server is responsible for receiving and processing data then resends answer for request. Currently the standard communication protocol in a global network WWW is HTTP (<em>Hypertext Transfer Protocol</em>) with its encrypting version HTTPS (<em>Hypertext Transfer Protocol Secure</em>). In order to encrypt sending files, there is mainly applied SSL protocol (<em>Secure Socket Layer</em>) together with transport layer TLS (<em>Transport Layer Security</em>) preventing data interception.
 
@@ -143,9 +153,9 @@ What is the difference between Web App and Website ?
 </li>
 </ul>
 
-Basically what is a Web Browser? 
+ ### What is basically a Web Browser? 
 
-This is a program that gets connected to the WWW using an unique URL adress (<em>Uniform Resource Locator</em>). This program downloads and presents processed data if a form of website or web app available in the web. 
+<b> Web Browser</b> is a program that gets connected to the WWW using an unique URL adress (<em>Uniform Resource Locator</em>). This program downloads and presents processed data if a form of website or web app available in the web. 
 
 
 Before getting into the project, let's see which technologies can be used as well on Frontend as Backend.
@@ -153,3 +163,19 @@ Before getting into the project, let's see which technologies can be used as wel
 ![alt text](/images/frontend.png)
 
 ![alt text](/images/backend.png)
+
+## Programming languages
+
+1. HTML
+2. CSS
+3. JavaScript
+4. Node.js
+5. Express.js
+   - get - method downloading indicated resource from server
+   - post - method sending data from client to server
+   - put - method updating sending data from client to server
+   - delete - method deleting indicated resources from server 
+6. Socket.io
+7. SerialPort
+   
+</div>
