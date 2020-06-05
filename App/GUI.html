@@ -1,0 +1,185 @@
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.7 maximum-scale=1.0, user-scalable=0">
+<head>
+    <style>
+    html, body { background-color: #1a2021; overflow: hidden; top: 0; left: 0; right: 0; bottom: 0; padding: 0;  margin: 0; }
+    .collapsible { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background-color: #1a2021; color: white; cursor: pointer; padding: 18px; width: 100%; border: none; text-align: left; outline: none; font-size: 15px; }
+    .active, .collapsible:hover { background-color: #2d3e3f; outline: none;}
+    .content { text-align: center; margin: 0px 0px; max-height: 0; overflow: hidden; -webkit-transition: max-height 0.2s ease-out; -o-transition: max-height 0.2s ease-out; transition: max-height 0.2s ease-out; color: white; background-color: #1a2021; }
+    .container { top: calc(50% - 448.8px/2 ); margin: 0px 0px; left: calc(50% - 500px/2 ); background-color: #2d3e3f; width: 500px; min-height: 500px; position: absolute; border-radius: 10px 10px 10px 10px; -webkit-box-shadow: rgba(0, 0, 0, 0.6) 15px 15px 60px 0px; -moz-box-shadow: rgba(0, 0, 0, 0.6) 15px 15px 60px 0px; box-shadow: rgba(0, 0, 0, 0.6) 15px 15px 60px 0px; -webkit-transition-property: height; -moz-transition-property: height; -o-transition-property: height; transition-property: height; -webkit-transition-duration: 2s; -moz-transition-duration: 2s; -o-transition-duration: 2s; transition-duration: 2s;}
+    .SLOW {position: absolute;  top: 5%; left: 5%; border-radius: 25%; border-top: 5px solid #111; border-bottom: 5px solid #111; border-left: 5px solid white; border-right: 5px solid white; color: white; background-color: #2d3e3f;}
+    .SLOW:active {border-radius: 25%; border-top: 5px solid white; border-bottom: 5px solid white; border-left: 5px solid #111; border-right: 5px solid #111; color: white;}
+    .FAST {position: absolute;  top: 5%; left: 85%; border-radius: 25%; border-top: 5px solid #111; border-bottom: 5px solid #111; border-left: 5px solid white; border-right: 5px solid white; color: white; background-color: #2d3e3f;}
+    .FAST:active {border-radius: 25%; border-top: 5px solid white; border-bottom: 5px solid white; border-left: 5px solid #111; border-right: 5px solid #111; color: white;}
+     input              { background-color: #2d3e3f; color: #2d3e3f; border: none; text-decoration: none; outline: none; }
+    .arrow              { position: absolute; display: inline-block; width: 50px; height: 50px; border-top: 5px solid #111; border-right: 5px solid #111; }
+    .arrow-top          { position: absolute;  top: 10%; left: 45%; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); }
+    .arrow-right        { position: absolute;  top: 35%; left: 75%; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);  }
+    .arrow-bottom       { position: absolute;  top: 60%; left: 45%; -webkit-transform: rotate(135deg); -ms-transform: rotate(135deg); transform: rotate(135deg);  }
+    .arrow-left         { position: absolute;  top: 35%; left: 15%; -webkit-transform: rotate(-135deg); -ms-transform: rotate(-135deg); transform: rotate(-135deg);  }
+    .arrow-top-left     { position: absolute;  top: 25%; left: 35%; -webkit-transform: rotate(-90deg) skew(-10deg, -10deg); -ms-transform: rotate(-90deg) skew(-10deg, -10deg); transform: rotate(-90deg) skew(-10deg, -10deg); }
+    .arrow-top-right    { position: absolute;  top: 25%; left: 55%; -webkit-transform: rotate(0) skew(-10deg, -10deg); -ms-transform: rotate(0) skew(-10deg, -10deg); transform: rotate(0) skew(-10deg, -10deg);  }
+    .arrow-bottom-left  { position: absolute;  top: 45%; left: 35%; -webkit-transform: rotate(180deg) skew(-10deg, -10deg); -ms-transform: rotate(180deg) skew(-10deg, -10deg); transform: rotate(180deg) skew(-10deg, -10deg); }
+    .arrow-bottom-right { position: absolute;  top: 45%; left: 55%; -webkit-transform: rotate(90deg) skew(-10deg, -10deg); -ms-transform: rotate(90deg) skew(-10deg, -10deg); transform: rotate(90deg) skew(-10deg, -10deg); }
+    .RLEFT              { position: absolute;  width: 80px; height: 50px; top: 80%; left: 30%; border-radius: 25%; border-top: 5px solid #111; border-bottom: 5px solid #111; border-left: 5px solid white; border-right: 5px solid white; color: white; background-color: #2d3e3f; transition: transform 10000ms ease-out;}
+    .RLEFT:active       {-webkit-transform: rotate(-3600deg);-ms-transform: rotate(-3600deg);transform: rotate(-3600deg);}
+    .RRIGHT             { position: absolute;  width: 80px; height: 50px; top: 80%; left: 55%; border-radius: 25%; border-top: 5px solid #111; border-bottom: 5px solid #111; border-left: 5px solid white; border-right: 5px solid white; color: white; background-color: #2d3e3f; transition: transform 10000ms ease-out;}
+    .RRIGHT:active      {-webkit-transform: rotate(3600deg);-ms-transform: rotate(3600deg);transform: rotate(3600deg);}
+    .arrow:active       { position: absolute; display: inline-block; width: 50px; height: 50px; border-top: 5px solid white; border-right: 5px solid white; }
+    </style>
+</head>
+<body>
+<button class="collapsible">Instruction</button>
+    
+        <div class="content">
+          <p> Individual arrows mean movement direction. <br>
+              Rotation movement is possible after pressing:
+              RLEFT - rotation left
+              RRIGHT - rotation right <br>
+             
+              Buttons SLOW and FAST change the robot speed. </p>
+        </div>
+        
+<div class="container">
+  
+<form action="">
+<input type="button" value="UP" class="arrow arrow-top"
+       onmousedown="toggle('UP');" onmouseup="toggle('STOP');"
+       ontouchstart="toggle('UP');" ontouchend="toggle('STOP');">
+</form>
+
+<form action="">
+<input type="button" value="DOWN" class="arrow arrow-bottom"
+       onmousedown="toggle('DOWN');" onmouseup="toggle('STOP');"
+       ontouchstart="toggle('DOWN');" ontouchend="toggle('STOP');">
+</form>
+
+<form action="">
+<input type="button" value="LEFT" class="arrow arrow-left"
+       onmousedown="toggle('LEFT');" onmouseup="toggle('STOP');"
+       ontouchstart="toggle('LEFT');" ontouchend="toggle('STOP');">
+</form>
+
+<form action="">
+<input type="button" value="RIGHT" class="arrow arrow-right"
+       onmousedown="toggle('RIGHT');" onmouseup="toggle('STOP');"
+       ontouchstart="toggle('RIGHT');" ontouchend="toggle('STOP');">
+</form>
+
+<form action="">
+<input type="button" value="UPRIGHT" class="arrow arrow-top-right"
+       onmousedown="toggle('UPRIGHT');" onmouseup="toggle('STOP');"
+       ontouchstart="toggle('UPRIGHT');" ontouchend="toggle('STOP');">
+</form>
+
+<form action="">
+<input type="button" value="UPLEFT" class="arrow arrow-top-left"
+       onmousedown="toggle('UPLEFT');" onmouseup="toggle('STOP');"
+       ontouchstart="toggle('UPLEFT');" ontouchend="toggle('STOP');">
+</form>
+
+<form action="">
+<input type="button" value="DOWNLEFT" class="arrow arrow-bottom-left"
+       onmousedown="toggle('DOWNLEFT');" onmouseup="toggle('STOP');"
+       ontouchstart="toggle('DOWNLEFT');" ontouchend="toggle('STOP');">
+</form>
+
+<form action="">
+<input type="button" value="DOWNRIGHT" class="arrow arrow-bottom-right"
+       onmousedown="toggle('DOWNRIGHT');" onmouseup="toggle('STOP');"
+       ontouchstart="toggle('DOWNRIGHT');" ontouchend="toggle('STOP');">
+</form>
+
+<form action="">
+<input type="button" value="RLEFT" class="RLEFT"
+       onmousedown="toggle('RLEFT');" onmouseup="toggle('STOP');"
+       ontouchstart="toggle('RLEFT');" ontouchend="toggle('STOP');">
+</form>
+
+<form action="">
+<input type="button" value="RRIGHT" class="RRIGHT"
+       onmousedown="toggle('RRIGHT');" onmouseup="toggle('STOP');"
+       ontouchstart="toggle('RRIGHT');" ontouchend="toggle('STOP');">
+</form>
+
+<form action="">
+<input type="button" value="SLOW" class="SLOW"
+       onclick="toggle('SLOW');">
+</form>
+
+<form action="">
+<input type="button" value="FAST" class="FAST"
+       onclick="toggle('FAST');">
+</form>
+
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+var socket = io.connect(document.location.href);
+
+function toggle(value)
+{
+ 
+ if(value=="UP"){
+  socket.emit('button update event', { status: 'UP' });
+ }
+ if(value=="DOWN"){
+  socket.emit('button update event', { status: 'DOWN' });
+ }
+ if(value=="LEFT"){
+  socket.emit('button update event', { status: 'LEFT' });
+ }
+ if(value=="RIGHT"){
+  socket.emit('button update event', { status: 'RIGHT' });
+ }
+ if(value=="UPRIGHT"){
+  socket.emit('button update event', { status: 'UPRIGHT' });
+ }
+ if(value=="UPLEFT"){
+  socket.emit('button update event', { status: 'UPLEFT' });
+ }
+ if(value=="DOWNLEFT"){
+  socket.emit('button update event', { status: 'DOWNLEFT' });
+ }
+ if(value=="DOWNRIGHT"){
+  socket.emit('button update event', { status: 'DOWNRIGHT' });
+ }
+ if(value=="RLEFT"){
+  socket.emit('button update event', { status: 'RLEFT' });
+ }
+ if(value=="RRIGHT"){
+  socket.emit('button update event', { status: 'RRIGHT' });
+ }
+ if(value=="STOP"){
+  socket.emit('button update event', { status: 'STOP' });
+ }
+  if(value=="SLOW"){
+  socket.emit('button update event', { status: 'SLOW' });
+ }
+  if(value=="FAST"){
+  socket.emit('button update event', { status: 'FAST' });
+ }
+}
+</script>
+
+        <!-- Button Animation -->
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script> 
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+#!/bin/bash
+cd ~/Login
+node app.js &
+node index.js &
+
