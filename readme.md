@@ -1,16 +1,16 @@
 <link href="style.css" rel="stylesheet"/>
+<div justify style="text-align: justify; max-width: 500px;">
 
 # 1. Omniwheeled Mobile Robot
 
 
 
-<img src="./images/show.gif" alt="alt text" width="500" height="whatever">
+<img src="./images/show.gif" alt="alt text" width="" height="whatever">
 
 
 
 ## Introduction to the Mobile Robots
 
-<div style="text-align: justify; max-width: 500px;">
 Mobile robots can be divided according to the power transmission system of a robot. 
 Popularization of the automation systems has caused a huge interest in designing and inventing new things by amateur constructors.
 These kinds of robots are are not only used in competitions or shows but also in real industry and production process.
@@ -59,7 +59,6 @@ Due to various way of movements, mobile robots can be group them into categories
 </ul>
 
 ### **Omniwheels kinematics**
-<div style="text-align: justify">
 
 An application of the mobile robot with multidirectional unit allows a holonomic movement on the plane. Robot's movement range is limited to four different directions and rotary motion. The purple arrows indicate the direction of robots movement, while the green arrows
 determine the rotation of each individual engine.  
@@ -88,7 +87,6 @@ determine the rotation of each individual engine.
 
 
 <img src="./images/track-3.png" alt="alt text" width="500" height="whatever">
-</div>
 
 ### Schematic
 
@@ -106,7 +104,6 @@ A 3D cover was designed in SolidWorks and later made on a 3D printer.
 <img src="./images/model-3.png" alt="alt text" width="500" height="whatever">
 
 
-</div>
 
 
 
@@ -131,25 +128,24 @@ HTTP provides stable data transmition with the following principle:
 
 What is the difference between Web App and Website ?
 
-Web Application is a program based on Client-Server architecture which requires stable Internet connection in order to communicate with server. Server is responsible for receiving and processing data then resends answer for request. Currently the standard communication protocol in a global network WWW is HTTP (Hypertext Transfer Protocol) with its encrypting version HTTPS (Hypertext Transfer Protocol Secure). In order to encrypt sending files, there is mainly applied SSL protocol (Secure Socket Layer) together with transport layer TLS (Transport Layer Security) preventing data interception.
+<b>Web Application</b> is a program based on Client-Server architecture which requires stable Internet connection in order to communicate with server. Server is responsible for receiving and processing data then resends answer for request. Currently the standard communication protocol in a global network WWW is HTTP (<em>Hypertext Transfer Protocol</em>) with its encrypting version HTTPS (<em>Hypertext Transfer Protocol Secure</em>). In order to encrypt sending files, there is mainly applied SSL protocol (<em>Secure Socket Layer</em>) together with transport layer TLS (<em>Transport Layer Security</em>) preventing data interception.
 
-Website is a rendered content of HTML file creating primarily in HTML, CSS and JavaScript. There are two distinguished types of websites:
+<b>Website</b> is a rendered content of HTML file creating primarily in HTML, CSS and JavaScript. There are two distinguished types of websites:
 
 <ul>
 <li>
-Dynamic - taking advantage of more complex model as CMS (Content Management System), it contains dynamic rendered as templates, scripts depending on server requests.
+<b>Dynamic</b> - taking advantage of more complex model as CMS (<em>Content Management System</em>), it contains dynamic rendered as templates, scripts depending on server requests.
 </li>
 </ul>
 <ul>
 <li>
-Static - content is rendered while loading a webpage, all files are sent to the user so it doesn't need to send requests to the server. 
+<b>Static</b> - content is rendered while loading a webpage, all files are sent to the user so it doesn't need to send requests to the server. 
 </li>
 </ul>
 
 Basically what is a Web Browser? 
 
-This is a program that gets connected to the WWW using an unique URL adress (Uniform
-Resource Locator). This program downloads and presents processed data if a form of website or web app available in the web. 
+This is a program that gets connected to the WWW using an unique URL adress (<em>Uniform Resource Locator</em>). This program downloads and presents processed data if a form of website or web app available in the web. 
 
 
 Before getting into the project, let's see which technologies can be used as well on Frontend as Backend.
