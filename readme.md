@@ -3,14 +3,14 @@
 # 1. Omniwheeled Mobile Robot
 
 
-![alt text](/images/show.gif) 
 
+<img src="./images/show.gif" alt="alt text" width="500" height="whatever">
 
 
 
 ## Introduction to the Mobile Robots
 
-<div style="text-align: justify; max-width: 700px;">
+<div style="text-align: justify; max-width: 500px;">
 Mobile robots can be divided according to the power transmission system of a robot. 
 Popularization of the automation systems has caused a huge interest in designing and inventing new things by amateur constructors.
 These kinds of robots are are not only used in competitions or shows but also in real industry and production process.
@@ -70,7 +70,7 @@ determine the rotation of each individual engine.
 </li>
 </ul>
 
-![](/images/track-1.png)
+<img src="./images/track-1.png" alt="alt text" width="500" height="whatever">
 
 <ul>
 <li>
@@ -78,30 +78,33 @@ determine the rotation of each individual engine.
 </li>
 </ul>
 
-![alt text](/images/track-2.png)
 
+<img src="./images/track-2.png" alt="alt text" width="500" height="whatever">
 <ul>
 <li>
 <b>Rotational movement</b> - consists of synchronous DC motors work, all of them rotate in the same direction. 
 </li>
 </ul>
 
-![alt text](/images/track-3.png)
+
+<img src="./images/track-3.png" alt="alt text" width="500" height="whatever">
 </div>
 
 ### Schematic
-![alt text](/images/block.png)
+
+<img src="./images/block.png" alt="alt text" width="500" height="whatever">
 
 
 ### **Model 3D**
 
 A 3D cover was designed in SolidWorks and later made on a 3D printer.
 
-![alt text](/images/model-1.png)
+<img src="./images/model-1.png" alt="alt text" width="500" height="whatever">
 
-![alt text](/images/model-2.png)
+<img src="./images/model-2.png" alt="alt text" width="500" height="whatever">
 
-![alt text](/images/model-3.png)
+<img src="./images/model-3.png" alt="alt text" width="500" height="whatever">
+
 
 </div>
 
