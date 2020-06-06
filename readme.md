@@ -13,8 +13,8 @@
 ## Introduction to the Mobile Robots
 
 
-Mobile robots can be divided according to the power transmission system of a robot. The popularization of the automation systems has caused a huge interest in designing and inventing new things by amateur constructors. These kinds of robots are not only used in competitions or shows but also in real industry and production process.
-One of the most important features of mobile robots is its high manoeuvrability and freedom of movement. An interesting solution is in taking advantage of special omnidirectional wheels also called as rollers. The wheels allow moving in every direction without rotation. It means that it's possible to change the direction of movement (orientation) in place. This solution makes it possible to apply in different technology fields like internal transport, logistics, research, monitoring and among others.
+Mobile robots can be divided according to the power transmission system of a robot. The popularization of the automation systems has caused a huge interest in designing and inventing new things by amateur constructors. These kind of robots are not only used in competitions or shows but also in real industry and production process.
+One of the most important features of mobile robots is its high manoeuvrability and freedom of movement. An interesting solution is in taking advantage of special omnidirectional wheels also called as rollers. The wheels allow moving in every direction without rotation. It means that it is possible to change the direction of movement (orientation) in place. This solution makes it possible to apply in different technology fields like internal transport, logistics, research, monitoring and among others.
 A classification of the robots can be carried out on the construction or type of control. The classification division of robots can be done by its kinematic structure:
 
 <ul>
