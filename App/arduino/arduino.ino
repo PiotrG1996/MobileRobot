@@ -2,11 +2,11 @@
 
 
 #define clockPin 7    
-#define latchPin  8    //Deklaracja pinów rejestru
+#define latchPin  8    // Shift Register pins definition
 #define dataPin  9     
 
 #define PWM4  10
-#define PWM2  5    //Deklaracja pinów PWM
+#define PWM2  5    // PWN pins definition
 #define PWM1  6
 #define PWM3  3
 
@@ -15,7 +15,7 @@ const int DOWN = 2;
 const int LEFT = 3;
 const int RIGHT  = 4;
 const int UPR= 5;
-const int UPL = 6;    //Definicja stałych - poszczegolne kierunki
+const int UPL = 6;    // Constants
 const int DL = 7;
 const int DR = 8;
 const int OP = 10;
@@ -23,7 +23,7 @@ const int OL = 9;
 const int STOP = 12;
 
 int readString;
-int speed_= 200;     //Definicja zmiennej speed_
+int speed_= 200;     
 int serialData = 0;   
 int speedData = 0;
 const int MAX_CMD_LENGTH = 10;
@@ -33,7 +33,7 @@ int cmdIndex;
 
 int calculate(int s){
   if(s<0){
-    return 0;           //Zabezpieczenie przed przepełnieniem 
+    return 0;           // Prevention from overflow
   }
   if(s>255){
     return 255;
@@ -113,20 +113,20 @@ void up_right()
 void up_left()
 {
         digitalWrite(latchPin, LOW);         
-        shiftOut(dataPin, clockPin, MSBFIRST, B10101010 );   //ustawienie bitów rejestru przesuwnego -10p
-        digitalWrite(latchPin, HIGH);                        //w celu zmiany kierunku obrotów
+        shiftOut(dataPin, clockPin, MSBFIRST, B10101010 );   // set up bit  -10p
+        digitalWrite(latchPin, HIGH);                        // change rotate direction
         analogWrite(PWM1,0);
-        analogWrite(PWM2,calculate(speed_));              //ustawienie prędkości poszczególnych silników
+        analogWrite(PWM2,calculate(speed_));              // set up individual motors speed
         analogWrite(PWM3,0);
         analogWrite(PWM4,calculate(speed_));
 }
 void down_right()
 {
         digitalWrite(latchPin, LOW);         
-        shiftOut(dataPin, clockPin, MSBFIRST, B10101010 );   //ustawienie bitów rejestru przesuwnego -10p
-        digitalWrite(latchPin, HIGH);                        //w celu zmiany kierunku obrotów
+        shiftOut(dataPin, clockPin, MSBFIRST, B10101010 );   
+        digitalWrite(latchPin, HIGH);                        
         analogWrite(PWM1,0);
-        analogWrite(PWM2,calculate(speed_));              //ustawienie prędkości poszczególnych silników
+        analogWrite(PWM2,calculate(speed_));              
         analogWrite(PWM3,0);
         analogWrite(PWM4,calculate(speed_));
 }
@@ -151,27 +151,27 @@ void stop_()
         analogWrite(PWM4,0);
 }
 void setup(){
-  Serial.begin(9600); // ustawienie prędkości transmisji
+  Serial.begin(9600); // speed of data transmition
   cmdIndex = 0;
-  pinMode(3, OUTPUT);//PWM4
-  pinMode(5, OUTPUT);//PWM2
-  pinMode(6, OUTPUT);//PWM3
-  pinMode(10, OUTPUT);//PWM1   Ustawienie pinów jako wyjścia      
-  pinMode(11, OUTPUT);//LED1
-  pinMode(12, OUTPUT);//LED2
-  pinMode(13, OUTPUT);//LED3
+  pinMode(3, OUTPUT); //PWM4
+  pinMode(5, OUTPUT); //PWM2
+  pinMode(6, OUTPUT); //PWM3
+  pinMode(10, OUTPUT); //PWM1        
+  pinMode(11, OUTPUT); //LED1
+  pinMode(12, OUTPUT); //LED2
+  pinMode(13, OUTPUT); //LED3
   pinMode(clockPin, OUTPUT);
   pinMode(latchPin, OUTPUT);
   pinMode(dataPin, OUTPUT);
   digitalWrite(11, HIGH);
-  digitalWrite(12, HIGH); // ustawienie stanu wysokiego diod
+  digitalWrite(12, HIGH); // diode - high
   digitalWrite(13, HIGH);
   stop_();
 }
   
 void loop(){
 
-while(Serial.available() > 0) // 
+while(Serial.available() > 0)  
 {
  delay(3);
  char byteIn = Serial.read();
@@ -250,7 +250,7 @@ case 14: speedData = 225;  break;
 default:
       break;
 }
-serialData=0;              //wyzerowanie zmiennych
+serialData=0;              // reset variables
 readString=0;  
 
 }

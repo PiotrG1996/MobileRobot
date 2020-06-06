@@ -8,7 +8,7 @@
 //]
 
 // funkcja sprawdzająca poprawność wpisywanych danych do logowania
-//function sprawdz() {
+//function CheckPassword() {
 //var username = document.getElementById("username").value;
 //var password = document.getElementById("password").value;
 

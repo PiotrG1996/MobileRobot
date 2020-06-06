@@ -26,12 +26,12 @@
             <input type="text" name="username" class="champ" 
                    placeholder="User name" onfocus="this.placeholder=''" 
                    onblur="this.placeholder='User name'" autocomplete="off" 
-                   required pattern=".{5,20}" oninvalid="setCustomValidity('minimal characters: 5')" 
+                   required pattern=".{5,20}" oninvalid="setCustomValidity('minimal number of characters: 5')" 
                    oninput="setCustomValidity('')"/><br>
             <input type="password" name="password" class="champ" 
-                   placeholder="Hasło" onfocus="this.placeholder=''" 
-                   onblur="this.placeholder='Hasło'" required pattern=".{13,20}" 
-                   oninvalid="setCustomValidity('minimal characters: 13')" 
+                   placeholder="Password" onfocus="this.placeholder=''" 
+                   onblur="this.placeholder='Password'" required pattern=".{13,20}" 
+                   oninvalid="setCustomValidity('minimal number of characters: 13')" 
                    oninput="setCustomValidity('')"/><br>
 
             <!-- Change input Admin/User -->
@@ -44,7 +44,7 @@
             </div>
 
             <!-- Buttons Login and choose -->
-    		<input type="submit" value="Login" id="submit" class="btn" onClick="sprawdz()"/>
+    		<input type="submit" value="Login" id="submit" class="btn" onClick="checkPassword()"/>
             <input type="submit" value="Choose" id="sign"   class="btn" />
 
     	</form>

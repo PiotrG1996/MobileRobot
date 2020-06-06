@@ -8,7 +8,7 @@
 </div>
 
 
-<div justify style="text-align: justify; margin-left: 20%; max-width: 500px;">
+<div justify style="text-align: justify;  max-width: 500px;">
 
 ## Introduction to the Mobile Robots
 
@@ -93,14 +93,28 @@ determine the rotation of each individual engine.
 <div style="text-align: center">
 <img src="./images/track-3.png" alt="alt text" width="500" height="whatever">
 </div>
-### Schematic
+
+### **Block diagram concept (1)**
+
+The first idea was to extend already existing project developed by Mateusz Musiałowski. His though was to control such a robot via Bluetooth connection. Afterwards, he decieded to code an android application to navigate a robot. Therefore this project can be extended and reused once again. In this case Raspberry Pi will be mounted at the top of the robots cover.      
+
 <div style="text-align: center">
 <img src="./images/block.png" alt="alt text" width="500" height="whatever">
 </div>
 
+
+### **Block diagram concept (2)**
+
+In this scenerio there is no need to use Arduino in order to control electrical motors. An external DC motor controller can be used directly on Raspberry Pi. This external hat can be find [here](https://wiki.dfrobot.com/DC_Motor_Driver_HAT_SKU_DFR0592).
+
+
+### **Custom Arduino PCB shield**
+
+
 ### **Model 3D**
 
-A 3D cover was designed in SolidWorks and later made on a 3D printer.
+
+A 3D cover was designed in SolidWorks and later done on a 3D printer. Results are presented below.
 <div style="text-align: center">
 <img src="./images/model-1.png" alt="alt text" width="500" height="whatever">
 </div>
@@ -122,10 +136,12 @@ A 3D cover was designed in SolidWorks and later made on a 3D printer.
 
 ## Introduction
 
+The idea of this project is to control a mobile robot via local wifi using only basic web technologies. Therefore usage of well-known HTTP protocol is reasonable and will be implemented. The biggest advantage of using web application is the fact that we are not restricted to any operation system. This application will be running in a web browser. Client-Server architecture allows to separate Frontend and Backend code, in this case server contains the whole functionality and client renders user interface.
+
 ## Web Technologies
 <div style="text-align: justify; max-width: 700px;">
 
-The idea of this project is to control a mobile robot via local wifi using only basic web technologies. Therefore usage of well-known HTTP protocol is reasonable and will be implemented. The biggest advantage of using web application is the fact that we are not restricted to any operation system. This application will be running in a web browser. Client-Server architecture allows to separate Frontend and Backend code, in this case server contains the whole functionality and client renders user interface.
+
 
 HTTP provides stable data transmition with the following principle: 
 <ul>
@@ -160,22 +176,27 @@ HTTP provides stable data transmition with the following principle:
 
 Before getting into the project, let's see which technologies can be used as well on Frontend as Backend.
 
-![alt text](/images/frontend.png)
+![Frontend](/images/frontend.png)
 
-![alt text](/images/backend.png)
+![Backend](/images/backend.png)
 
 ## Programming languages
 
 1. HTML
 2. CSS
-3. JavaScript
-4. Node.js
-5. Express.js
-   - get - method downloading indicated resource from server
-   - post - method sending data from client to server
-   - put - method updating sending data from client to server
-   - delete - method deleting indicated resources from server 
-6. Socket.io
-7. SerialPort
+3. JavaScript 
+   - [Node.js](https://nodejs.org/en/about/)
+   - [Express.js](https://expressjs.com/en/4x/api.html#app) </br>
+      get - method downloading indicated resources from the server</br>
+      post - method sending data from client to the server</br>
+      put - method updating sending data from client to the server</br>
+      delete - method deleting indicated resources from the server 
+   - [Socket.io](https://socket.io/docs/server-api/)
+   - [SerialPort](https://serialport.io/docs/guide-about)
    
+### **Raspberry Pi**
+
+
+### **Arduino** 
+
 </div>
