@@ -154,7 +154,7 @@ HTTP provides stable data transmission with the following principle:
 <b>Website</b> is a rendered content of HTML file creating primarily in HTML, CSS and JavaScript. There are two distinguished types of websites:
 <ul>
 <li>
-<b>Dynamic</b> - taking advantage of more complex model as CMS (<em>Content Management System</em>), it contains dynamic rendered as templates, scripts depending on server requests.
+<b>Dynamic</b> - taking advantage of more complex model as CMS (<em>Content Management System</em>), it contains dynamic rendered templates and scripts depending on server requests.
 </li>
 </ul>
 <ul>
