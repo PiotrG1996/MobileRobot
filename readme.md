@@ -23,7 +23,6 @@ A classification of the robots can be carried out on the construction or type of
 </ul>
 
 
-
 ### **Division of mobile robots**
 
 Due to various way of movements, mobile robots can group them into categories:
@@ -191,6 +190,9 @@ Before getting into the project, let's see which technologies can be used as wel
 ### **Raspberry Pi**
 
 
-### **Arduino** 
+### **Arduino**
+
+### **Futher development**
 
 </div>
+
