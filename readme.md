@@ -67,36 +67,36 @@ An application of the mobile robot with the multidirectional unit allows a holon
 <li><b>Main movement</b> - consists of two distinct directions, the robot moves with all four electrical motors running synchronously.
 </li>
 </ul>
-<div style="text-align: center">
-<img src="./images/track-1.png" alt="alt text" width="500" height="800">
-</div>
+<p align="center">
+  <img width="500" height="" src="./images/track-1.png">
+</p>
+
 <ul>
 <li>
 <b>Auxiliary movement</b> - consists of two successive directions, auxiliary movement is possible thanks to the synchronous operation of only two DC motors.
 </li>
 </ul>
-
-<div style="text-align: center">
-<img src="./images/track-2.png" alt="alt text" width="500" height="whatever">
-</div>
+<p align="center">
+  <img width="500" height="" src="./images/track-2.png">
+</p>
 <ul>
 <li>
 <b>Rotational movement</b> - consists of synchronous DC motors work, all of them rotate in the same direction. 
 </li>
 </ul>
 
-<div style="text-align: center">
+<p align="center">
 <img src="./images/track-3.png" alt="alt text" width="500" height="whatever">
-</div>
+</p>
+
 
 ### **Block diagram concept (1)**
 
 The first idea was to extend the already existing project developed by Mateusz Musiałowski. His thought was to control such a robot via Bluetooth connection. Afterwards, he decided to code an android application to navigate a robot. Therefore this project can be extended and reused once again. In this case, Raspberry Pi will be mounted at the top of the robots cover.       
 
-<div style="text-align: center">
+<p align="center">
 <img src="./images/block.png" alt="alt text" width="500" height="whatever">
-</div>
-
+</p>
 
 ### **Block diagram concept (2)**
 
@@ -110,20 +110,18 @@ In this scenario, there is no need to use Arduino in order to control electrical
 
 
 A 3D cover was designed in SolidWorks and later done on a 3D printer. Results are presented below.
-<div style="text-align: center">
+
+<p align="center">
 <img src="./images/model-1.png" alt="alt text" width="500" height="whatever">
-</div>
+</p>
 
-<div style="text-align: center">
+<p align="center">
 <img src="./images/model-2.png" alt="alt text" width="500" height="whatever">
-</div>
+</p>
 
-<div style="text-align: center">
+<p align="center">
 <img src="./images/model-3.png" alt="alt text" width="500" height="whatever">
-</div>
-
-
-
+</p>
 
 
 
