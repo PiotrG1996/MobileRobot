@@ -3,9 +3,10 @@
 # 1. Omniwheeled Mobile Robot
 
 
-<div style="text-align: center">
-<img src="./images/show.gif" alt="alt text" width="" height="whatever">
-</div>
+
+<p align="center">
+  <img src="./images/show.gif">
+</p>
 
 
 <div justify style="text-align: justify;  max-width: 500px;">
@@ -67,7 +68,7 @@ An application of the mobile robot with the multidirectional unit allows a holon
 </li>
 </ul>
 <div style="text-align: center">
-<img src="./images/track-1.png" alt="alt text" width="500" height="whatever">
+<img src="./images/track-1.png" alt="alt text" width="500" height="800">
 </div>
 <ul>
 <li>
