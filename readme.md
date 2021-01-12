@@ -166,7 +166,7 @@ HTTP provides stable data transmission with the following principle:
 <b> Web Browser</b> is a program that gets connected to the WWW using an unique URL address (<em>Uniform Resource Locator</em>). This program downloads and presents processed data if a form of website or web app available on the web. 
 
 
-Before getting into the project, let's see which technologies can be used as well on Frontend as Backend.
+Before getting into the project, let's see which technologies can be used on Frontend as well as on Backend.
 
 ![Frontend](/images/frontend.png)
 
